@@ -1,0 +1,16 @@
+How to generate a PDF from html with TCPDF in laravel
+
+https://ourcodeworld.com/articles/read/233/how-to-generate-a-pdf-from-html-with-tcpdf-in-laravel
+
+
+
+Laravel 5 export to pdf using elibyy Laravel TCPDF
+https://github.com/elibyy/tcpdf-laravel
+
+
+Generate PDF using TCPDF library with Laravel
+https://salitha94.blogspot.com/2018/08/generate-pdf-using-tcpdf-library-with-laravel.html
+
+
+PDF and Excel Export
+http://itsolutionstuff.com/post/laravel-5-export-to-pdf-using-maatwebsite-exampleexample.html

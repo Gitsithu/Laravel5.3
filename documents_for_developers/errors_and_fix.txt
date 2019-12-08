@@ -1,0 +1,26 @@
+Error 1 :  
+
+ErrorException in tcpdf.php line 16542:
+The each() function is deprecated. This message will be suppressed on further calls
+
+
+Ref: 
+https://github.com/elibyy/tcpdf-laravel/issues/37
+
+
+Solution
+Step 1 Open the file 
+/home/waiyan/Documents/laravel/laravel_class_projects/laravel_5_3_mini_project_v2/vendor/tecnickcom/tcpdf/tcpdf.php
+
+Step 2 - go to line 16543 and replace
+// while (list($id, $name) = each($attr_array[1])) {
+    foreach($attr_array[1] as $id => $name) {
+foreach($attr_array[1] as $id => $name) {
+
+Step 3 : go to line 16556 and replace
+// while (list($id, $name) = each($style_array[1])) {
+foreach($style_array[1] as $id => $name) {
+
+Ref: image error1_1.png, error1_2.png and error1_3.png
+
+===================================

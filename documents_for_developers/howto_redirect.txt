@@ -1,0 +1,29 @@
+Step1 - Open and check 
+App\Http\Controllers\Auth\LoginController.php
+
+There will be use "use AuthenticatesUsers;"
+----------------------------
+
+Step 2 - Open and check 
+Illuminate\Foundation\Auth\AuthenticatesUsers.php
+
+There will be use "use RedirectsUsers,ThrottlesLogins"
+----------------------------
+
+Step 3 - Open and check
+Illuminate\Foundation\Auth\RedirectsUsers.php
+You can edit the redirect path after login
+
+public function redirectTo()
+{
+
+    $loginUser = Auth::user();
+    
+    if($loginUser->role_id == 1){
+        return '/backend/course';
+    }
+    return '/backend/dashboard';
+
+}
+
+----------------------------
